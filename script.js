@@ -49,7 +49,7 @@ function tambah(e){
 }
 function Hapus(e){
     if(e.target.classList.contains('Delete')){
-        if(confirm("Are you sure>")){
+        if(confirm("Apakah Anda Yakin?")){
             var ya = e.target.parentElement;
             isi.removeChild(ya)
         }
@@ -69,12 +69,11 @@ function Hapus(e){
 
 $(document).ready(function(){
     $('body').css({
-    'background-color':'#a52a2a',
-    'height':'100vh',
+       'background-color':'#a52a2a',
+       'height':'100vh',
     })
     $('#root').css({
         'height':'100vh',
-        
     })
     $('#todo').css({
         'width':'50%',
@@ -82,7 +81,6 @@ $(document).ready(function(){
         'background-color':'rgb(77, 62, 62)',
         'margin':'auto',
         'margin-top':'10%',
-        
     })
     $('.header').css({
         'width':'100%',
@@ -90,7 +88,6 @@ $(document).ready(function(){
         'color':'#f2f2f2',
         'padding':'10px 0',
         'background-color':'#794000',
-
     })
     $("input[type='text']").css({
         'width':'80%',
