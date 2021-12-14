@@ -1,5 +1,4 @@
 template = document.getElementById("root")
-
 template.innerHTML = `
 <div class="todo" id="todo">
    <div class="header"> WHAT TODO </div>
@@ -15,8 +14,6 @@ var form = document.getElementById('tambah')
 var isi = document.getElementById('Isi')
 form.addEventListener('submit',tambah)
 isi.addEventListener('click',Hapus)
-
-
 function tambah(e){
         e.preventDefault()
         var li = document.createElement('li')
@@ -49,7 +46,6 @@ function tambah(e){
                'cursor':'pointer'
             })
         })
-       
 }
 function Hapus(e){
     if(e.target.classList.contains('Delete')){
@@ -124,5 +120,3 @@ $(document).ready(function(){
         'color':'#f2f2f2',
     })
 })
-
-C:\Users\My Laptop\Documents\Programming\ISI\Web Design\PROJECT LAT\TODOhehe\script.js
